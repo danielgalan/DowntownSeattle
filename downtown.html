@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Downtown Seattle from Alki Beach</title>
+<link href="css/global.css" rel="stylesheet" type="text/css">
+<javascript >
+  
+</head>
+
+<body>
+
+<div id="container">
+	<div id="nav">
+    <a>+</a>
+    </div>
+	<div class="snimg" id="content"><img src="images/dtown1.jpg" class="resize"/></div><div class="snimg" id="content"><img src="images/dtown2.jpg" class="resize"/></div><div class="snimg" id="content"><img src="images/dtown3.jpg" class="resize"/></div><div class="snimg" id="content"><img src="images/dtown4.jpg" class="resize"/></div><div class="snimg" id="content"><img src="images/dtown5.jpg" class="resize"/></div>
+</div>
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script> <!-- HAD TO USE JQUERY 1.9.1 TO RUN THE SCRIPT-->
+<script type="text/javascript" src="http//code.jquery.com-1.11.0.min.js"></script> 
+<script type="text/javascript" src="jquery/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="jquery/jquery.bpopup.min.js"></script>
+
+
+
+
+<!--function showImage(){document.getElementById("dtown1").style.visibility='visible';} along with a tag <img id="dtown2" src="images/dtown2.jpg" class="resize" style="visibility:hidden"/>   THIS APPROACH WAS ABANDONED-->
+
+<script>  
+    
+$( document ).ready(function () {
+    
+    	/*$('.snimg').each(function (i) {
+    $(this).delay(200 * (i + 1)).fadeIn(1000);
+	});*/
+	
+	$('#nav').click(function () {
+		
+	   $('.snimg').each(function (i) {
+           
+            $(this).delay(200 * (i + 1)).fadeIn(1000);
+	   });
+	   //$(this).addclass(clicked); what is this doing?
+	});
+});
+</script> 
+
+<!--I found and modified this 	
+
+$('.snimg').each(function (i) {
+    $(this).delay(200 * (i + 1)).fadeIn(1000);
+	});
+    
+    AND inserted it in this
+    
+    $('#nav').click(function () {
+    
+    inserted_it_here
+    $(this).addclass(clicked);
+	}); THESE LAST TWO LINES CLOSED THE FUNCTION.this is called 'chaining'. Inserting a function in a function.
+    I FIGURED IT OUT!
+    
+    --> 
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background-color: white;
+	
+	}
+.snimg {
+    display:none;
+    position:relative;
+    float:left;
+    transition:0.4s;
+    opacity:0.8;
+}
+	
+#container{
+	
+	width: 500px ;
+	margin: 0 auto;
+	}	
+	
+#nav{
+	text-align:center;
+	width: 100px ;
+	margin: 0 auto;
+	border:0px solid red;
+	}	
+		
+	
+	
+	
+	
+.resize {
+				
+				width : 100px;
+				height: auto;
+				
+				} /*img is specified in this class so that if there is a div or another element with resize it would not affect it*/
+	
+	
+	
+
+		/*to redefine the anchor tag from the html file*/
+		a{
+			text-decoration:none;
+			font-size:100px;
+			color: #CCC;
+			font-family: Helvetica;
+			
+			}
+			
+		a:hover{
+			
+			text-decoration:none;
+			color:gray;
+			font-size :100px;
+			
+			}/*shows underlining when hovering over*/
+			
+			
+		div.button{
+			
+			height: 50px;
+			width: 100px;
+			background-color: red;
+			margin-bottom:5px;
+			float:left;
+			margin:15px;
+			border:10px solid black;
+			}
+		
+						div.button:hover{
+							
+							background-color:yellow;
+							width  :110px;
+							height : 60px;
+							}
+				
+		
+
+	
+	
+	
+	
+	
+.translucent{
+	
+	/*background-color: black; /*or>>> rgb (0,0,0, 0.5)* last is the alpha for transparency*/
+	color:black;
+	/*opacity			: 0.5; /*everything is 50% transparent*/
+	width			: 300px;
+	height			: 300px;
+	background-color: rgba(255,100,400,0.5);
+	
+	
+	}
